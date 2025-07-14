@@ -2,7 +2,7 @@ from databricks.sdk.runtime import dbutils, spark
 import os
 
 ## Update catalog, schema with your own values
-WORKSHOP_CATALOG = "agent_workshop"
+WORKSHOP_CATALOG = "aiml_dev"
 WORKSHOP_SCHEMA = "agents"
 USER_SCHEMA = spark.sql("select regexp_replace(lower(split(current_user(), '@')[0]), '[ .]', '_')").collect()[0][0]
 
